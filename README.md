@@ -46,6 +46,7 @@ xxx.jsp ->       (웹컨테이너(tomcat))      -> html
 
 ### Servlet 생명주기
 ```Generic srevlet - overriding```
+
 @PostConstruct - 준비
 **init() - 생성 [공통적인 단계]
 service() 사용이 드물다 , doGet(), doPost() - 진행
