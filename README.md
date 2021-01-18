@@ -17,3 +17,24 @@ port
 > http://www.google.com:80/index.html
 protocol   도메인       port  경로
 
+
+## 웹 컨테이너 구조
+xxx.jsp ->       (웹컨테이너(tomcat))      -> html
+            jsp.java, jsp.class, jsp.obj
+ 
+ jsp - view 
+ servlet - model, control
+ 
+ > jsp, servlet 파일 생성
+ new - DinamicWeb - web.xml 생성
+ 
+ > Servlet 맵핑이란?
+ Browser가 servlet을 구분하기 위한 주소를 간결하고 보안에 취약하지 않게 수정
+ 
+ 01 web.xml 맵핑 [배치 지시자(deployment descriptior)]
+ - <servlet-name> servletEx </servlet-name>
+ - <url-patern> /se </url-patern>
+ 
+ 02 java Annotation 맵핑(해당 servlet위에 작성)
+ - @WebServlet("/se")
+ 
