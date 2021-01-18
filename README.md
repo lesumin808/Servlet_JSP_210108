@@ -5,7 +5,7 @@
 
 **웹프로그램이란?** 인터넷 서비스를 이용해서 서로 다른 구성요소들(PC등)이 통신할 수 있는 프로그램
 
-<bold>프로토콜(Protocol)
+프로토콜(Protocol)
 - 통신을 하기위한 규약으로 HTTP(글과 텍스트가 하이퍼링크로 연결),FTP(파일 전송),SMTP(메일),POP 등..
 
 IP주소
@@ -26,8 +26,6 @@ xxx.jsp ->       (웹컨테이너(tomcat))      -> html
  > jsp, servlet 파일 생성
  new - DinamicWeb - web.xml 생성
  
- ___
- 
 ### Servlet 맵핑이란?
  Browser가 servlet을 구분하기 위한 주소를 간결하고 보안에 취약하지 않게 수정
  
@@ -38,3 +36,18 @@ xxx.jsp ->       (웹컨테이너(tomcat))      -> html
  02 java Annotation 맵핑(해당 servlet위에 작성)
  - `@WebServlet("/se")`
  
+ ### HttpServlet
+ HttpServlet 상속을 extends 해서 사용 (웹컨테이너(tomcat)가 보유)
+
+01 HttpSevletRequest (user -> servlet)
+- 요청에 대한 정보를 가지고 있는 객체
+02 HttpServletResponse (servlet -> user)
+- 응답에 대한 정보를 가지고 있는 객체
+
+### Servlet 생명주기
+```Generic srevlet - overriding```
+@PostConstruct - 준비
+**init() - 생성 [공통적인 단계]
+service() 사용이 드물다 , doGet(), doPost() - 진행
+destroy() - 종료 [내용을 반납할 때]**
+@PreDestroy - 정리
