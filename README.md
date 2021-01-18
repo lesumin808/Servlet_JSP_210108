@@ -1,6 +1,6 @@
 # Servlet_JSP_210108
 
-## 웹 프로그램이란?
+### 웹 프로그램이란?
 서로 연결된 상태를 네트워크
 
 `웹프로그램이란?` 인터넷 서비스를 이용해서 서로 다른 구성요소들(PC등)이 통신할 수 있는 프로그램
@@ -18,7 +18,7 @@ port
 protocol   도메인       port  경로
 
 
-## 웹 컨테이너 구조
+### 웹 컨테이너 구조
 xxx.jsp ->       (웹컨테이너(tomcat))      -> html
             jsp.java, jsp.class, jsp.obj
  
@@ -28,7 +28,7 @@ xxx.jsp ->       (웹컨테이너(tomcat))      -> html
  > jsp, servlet 파일 생성
  new - DinamicWeb - web.xml 생성
  
- > Servlet 맵핑이란?
+### Servlet 맵핑이란?
  Browser가 servlet을 구분하기 위한 주소를 간결하고 보안에 취약하지 않게 수정
  
  01 web.xml 맵핑 [배치 지시자(deployment descriptior)]
