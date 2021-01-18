@@ -32,9 +32,9 @@ xxx.jsp ->       (웹컨테이너(tomcat))      -> html
  Browser가 servlet을 구분하기 위한 주소를 간결하고 보안에 취약하지 않게 수정
  
  01 web.xml 맵핑 [배치 지시자(deployment descriptior)]
- - <servlet-name> servletEx </servlet-name>
- - <url-patern> /se </url-patern>
+ - `<servlet-name> servletEx </servlet-name>`
+ - `<url-patern> /se </url-patern>`
  
  02 java Annotation 맵핑(해당 servlet위에 작성)
- - @WebServlet("/se")
+ - `@WebServlet("/se")`
  
